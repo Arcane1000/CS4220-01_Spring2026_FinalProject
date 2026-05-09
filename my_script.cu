@@ -28,8 +28,8 @@ char toLowerChar(char c) {
 }
 
 // Check character is letter.
-bool isLetter(char c) {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+bool isChar(char c) {
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
 
 // Count total words, and frequency of specific word.
@@ -48,9 +48,9 @@ void countWords(const string &content, const string &target,
     for (int i = 0; i < n; i++) {
         
         // Letter -> Character Total.
-        if (isLetter(content[i])) charCount++;  // count letters as characters
+        if (isChar(content[i])) charCount++;  // count letters as characters
 
-        if (isLetter(content[i]) && (i == 0 || !isLetter(content[i - 1]))) {
+        if (isChar(content[i]) && (i == 0 || !isChar(content[i - 1]))) {
             wordCount++;
             bool match = true;
 
@@ -71,7 +71,7 @@ void countWords(const string &content, const string &target,
 
             // Full Word Match, not partial.
             if (match && i + (int)target.size() < n &&
-                isLetter(content[i + target.size()])) {
+                isChar(content[i + target.size()])) {
                 match = false;
             }
 
@@ -94,8 +94,8 @@ __device__ char gpu_toLower(char c) {
     return c;
 }
 
-__device__ bool gpu_isLetter(char c) {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+__device__ bool gpu_isChar(char c) {
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
 
 __global__ void kernel
@@ -105,14 +105,14 @@ __global__ void kernel
     if (i >= n) return;
 
     // Character Count
-    if (gpu_isLetter(text[i])) {
+    if (gpu_isChar(text[i])) {
         atomicAdd(charCount, 1);
     }
 
     // Word Check
-    if (!gpu_isLetter(text[i])) return;
+    if (!gpu_isChar(text[i])) return;
 
-    if (i > 0 && gpu_isLetter(text[i - 1])) return;
+    if (i > 0 && gpu_isChar(text[i - 1])) return;
 
     // Word Count
     atomicAdd(wordCount, 1);
@@ -125,7 +125,7 @@ __global__ void kernel
         if (gpu_toLower(text[i + j]) != gpu_toLower(target[j])) return;
     }
 
-    if (i + tlen < n && gpu_isLetter(text[i + tlen])) return;
+    if (i + tlen < n && gpu_isChar(text[i + tlen])) return;
     
     atomicAdd(targetCount, 1);
 
@@ -239,4 +239,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-

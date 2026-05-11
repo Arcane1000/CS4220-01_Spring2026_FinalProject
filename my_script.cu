@@ -131,6 +131,58 @@ __global__ void kernel
 
 }
 
+// ===========
+//   New GPU
+// ===========
+
+__global__ void newKernel(const char *text, int n,
+                                const char *target, int tlen,
+                                int *wordCount, int *targetCount, int *charCount) {
+    __shared__ char tile[TILE_SIZE];
+
+    int globalStart = blockIdx.x * BLOCK_SIZE;
+    int tid = threadIdx.x;
+
+    // Load tile into shared memory (including overlap)
+    for (int k = tid; k < TILE_SIZE; k += BLOCK_SIZE) {
+        int idx = globalStart + k;
+        tile[k] = (idx < n) ? text[idx] : '\0';
+    }
+    __syncthreads();  // wait for all threads to finish loading
+
+    int i = globalStart + tid;
+    if (i >= n) return;
+
+    int localIdx = tid;  // position within shared memory tile
+
+    // Character count
+    if (gpu_isChar(tile[localIdx])) atomicAdd(charCount, 1);
+
+    // Word boundary
+    if (!gpu_isChar(tile[localIdx])) return;
+    bool prevIsLetter = (localIdx > 0) ? gpu_isChar(tile[localIdx - 1])
+                                       : (i > 0 && gpu_isChar(text[i - 1]));
+    if (prevIsLetter) return;
+
+    // Word count
+    atomicAdd(wordCount, 1);
+
+    // Target match using shared memory
+    if (i + tlen > n) return;
+    for (int j = 0; j < tlen; j++) {
+        int si = localIdx + j;
+        char c = (si < TILE_SIZE) ? tile[si] : text[i + j];  // fall back if out of tile
+        if (gpu_toLower(c) != gpu_toLower(target[j])) return;
+    }
+
+    int afterIdx = localIdx + tlen;
+    char afterChar = (afterIdx < TILE_SIZE) ? tile[afterIdx] : 
+                     ((i + tlen < n) ? text[i + tlen] : '\0');
+    if (i + tlen < n && gpu_isChar(afterChar)) return;
+
+    atomicAdd(targetCount, 1);
+}
+
 // =============
 //   Main Test
 // =============
@@ -173,11 +225,12 @@ int main(int argc, char *argv[]) {
     double cpuTime = double(cpuEnd - cpuStart);
     
     // Print Results.
-    cout << "===== CPU RESULTS =====" << endl << endl;
+    cout << "CPU RESULTS" << endl;
+    cout << "-------------------------------" << endl;
     cout << "Total Word Count: " << wordCount << endl;
     cout << "Total Character Count: " << charCount << endl;
     cout << "Frequency of \"" << target << "\": " << targetCount << endl;
-    cout << "CPU Processing Time: " << cpuTime << " ms" << endl;
+    cout << "CPU Processing Time: " << cpuTime << " ms" << endl << endl;
     cout << endl;
 
     // GPU Setup
@@ -202,7 +255,7 @@ int main(int argc, char *argv[]) {
     cudaMemcpy(d_target, target.c_str(),  target.size(), cudaMemcpyHostToDevice);
 
     int threads = BLOCK_SIZE;
-    int blocks = (n * threads - 1) / threads;
+    int blocks = (n + threads - 1) / threads;
 
     cudaEvent_t gpuStart, gpuEnd;
 
@@ -230,12 +283,49 @@ int main(int argc, char *argv[]) {
     cudaMemcpy(&h_charCount, d_charCount, sizeof(int), cudaMemcpyDeviceToHost);
 
     // Print Results.
-    cout << "===== GPU RESULTS =====" << endl << endl;
+    cout << "GPU RESULTS" << endl;
+    cout << "-------------------------------" << endl;
     cout << "Total Word Count: " << h_wordCount << endl;
     cout << "Total Character Count: " << h_charCount << endl;
     cout << "Frequency of \"" << target << "\": " << h_targetCount << endl;
-    cout << "GPU Processing Time: " << gpuTime << " ms" << endl;
+    cout << "GPU Processing Time: " << gpuTime << " ms" << endl << endl;
     cout << endl;
+
+    // NEW GPU TEST
+    h_wordCount = h_targetCount = h_charCount = 0;
+
+    cudaMemcpy(d_wordCount, &h_wordCount, sizeof(int), cudaMemcpyHostToDevice);
+    cudaMemcpy(d_targetCount, &h_targetCount, sizeof(int), cudaMemcpyHostToDevice);
+    cudaMemcpy(d_charCount, &h_charCount, sizeof(int), cudaMemcpyHostToDevice);
+
+    cudaEventRecord(gpuStart);
+    newKernel<<<blocks, threads>>>(d_text, n, d_target, target.size(), 
+                                d_wordCount, d_targetCount, d_charCount);
+
+    cudaEventRecord(gpuEnd);
+    cudaEventSynchronize(gpuEnd);
+    cudaEventElapsedTime(&gpuTime, gpuStart, gpuEnd);
+
+    cudaMemcpy(&h_wordCount, d_wordCount, sizeof(int), cudaMemcpyDeviceToHost);
+    cudaMemcpy(&h_targetCount, d_targetCount, sizeof(int), cudaMemcpyDeviceToHost);
+    cudaMemcpy(&h_charCount, d_charCount, sizeof(int), cudaMemcpyDeviceToHost);
+
+    // Print Results.
+    cout << "NEW GPU RESULTS" << endl;
+    cout << "-------------------------------" << endl;
+    cout << "Total Word Count: " << h_wordCount << endl;
+    cout << "Total Character Count: " << h_charCount << endl;
+    cout << "Frequency of \"" << target << "\": " << h_targetCount << endl;
+    cout << "GPU Processing Time: " << gpuTime << " ms" << endl << endl;
+
+    // Cleanup
+    cudaFree(d_text); 
+    cudaFree(d_target);
+    cudaFree(d_wordCount);
+    cudaFree(d_targetCount);
+    cudaFree(d_charCount);
+    cudaEventDestroy(gpuStart); 
+    cudaEventDestroy(gpuEnd);
 
     return 0;
 }

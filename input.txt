@@ -1,5 +1,190 @@
-Hello World. Hello Cuda. Hello Cal Poly Pomona.
-Hello World. Hello Cuda. Hello Cal Poly Pomona.
-Hello World. Hello Cuda. Hello Cal Poly Pomona.
+My Game Console Collector's List
 
-0 15 24 2 19 3 20 02 220 002 
+My Rules for my Gaming Collection.
+
+#1: Backwards Compatibility.
+- The ability of older games and hardware to be played on newer consoles.
+- There wouldn't be a need to buy every console, just a select few. Saves money that way.
+- Example: The Nintendo Wii U can play Wii games with Wii Remotes.
+
+#2: Region Lock
+- The restriction of games from one region to be played on a console of another.
+- Region Free means the games are playable on a console no matter the region.
+- Example: The Nintendo DS is Region-Free, so it can play games of any region:
+    - American, Japan, Europe, etc.
+
+#3: Nostalgia
+- The connection/sentiment associated with the console, game titles, and experiences.
+- Collections can be built by memories from childhood and favorite games and titles.
+- Example: I love the Smash Bros. games, so I plant o get consoles compatible with all game titles for Smash.
+
+#4: Multiplayer
+- Games or Consoles that allow two or more players to play together, locally or online.
+- Best for family, friends, gatherings, game nights, parties, etc.
+- Example: Multiple Controllers for home consoles, Multiple Consoles for Handhelds.
+
+#5: Pokemon
+- A Game series where you collect Pokemon to complete the Pokedex.
+- Every Generation releases two versions of the game. Impossible to complete one without the other.
+- Example: For handhelds, multiple consoles required for trading and battling.
+
+#6: Variety
+- Multiple versions, colors, and models of the console family.
+- Adds uniqueness and diversity to my collection.
+- Example: My 3DS Collection has consoles of different versions. (3DS XL, 2DS, New 3DS XL, New 2DS XL)
+
+
+CONSOLE DETAILS & CHECKLIST
+
+Nintendo (Home):
+
+Nintendo Entertainment System (NES)
+- Released in North America, 1985. Best-known for bringing the video game industry back up after the crash in 1983.
+- Most of Nintendo's Iconic Game Franchises and Titles started on the NES: Super Mario Bros., Duck Hunt, The Legend of Zelda, Metroid, Dragon Quest, Final Fantasy.
+- Console is on my list.
+  - Nintendo Entertainment System (NES-001, White & Gray)
+
+Super NES (SNES)
+- Released in North America, 1991. Best-known for expanding on the NES's success with improved graphics, sound, and controller design.
+- Console's best game titles: Super Mario World, Super Mario Kart, Super Metroid, The Legend of Zelda: A Link to the Past, Star Fox, Donkey Kong Country, Final Fantasy VI
+- Console is on my list.
+  - Super NES (SNUS-001, White and Indigo)
+
+Nintendo 64
+- Released in 1996. Best-known for introducing 3D Graphics in gaming and having a 3-pronged design for the controllers.
+- Console's best game titles: Super Mario 64, The Legend of Zelda: Ocarina of Time, The Legend of Zelda: Majora's Mask, Super Smash Bros., Mario Party, Mario Kart 64, GoldenEye 007
+- Console is on my list.
+  - Nintendo 64 (NUS-001, Black)
+
+Nintendo GameCube
+- Released in 2001. Best-known for switching the gaming format from cartridges to mini-discs. 
+- Console's best game titles: Super Smash Bros. Melee, Metroid Prime, Super Mario Sunshine, Mario Kart: Double Dash!!, The Legend of Zelda: The Wind Waker, Luigi's Mansion, Animal Crossing, F-Zero GX.
+- Console is on my list.
+  - Nintendo GameCube (DOL-001, Indigo)
+
+Nintendo Wii
+- Released in 2006. Best-known for switching controllers from wired to wireless, motion-controlled remotes.
+- Console's best game titles: Wii Sports, Wii Sports Resort, New Super Mario Bros., Super Mario Galaxy 1 and 2, The Legend of Zelda: Skyward Sword, Super Smash Bros. Brawl, Xenoblade Chronicles, Mario Party 8 and 9
+- Console is NOT on my list. Games and Hardware playable on Wii U.
+
+Nintendo Wii U
+- Released in 2012. Best-known for the GamePad controller with a built-in touchscreen, but had bad marketing.
+- Console's best game titles: Mario Kart 8, Super Mario 3D World, Super Smash Bros. for Wii U, Nintendo Land, Splatoon, Super Mario Maker, The Legend of Zelda: Breath of the Wild
+- Console is on my list.
+  - Wii U [32GB Event Model] (WUP-101, Black)
+
+
+Nintendo (Handheld):
+
+Nintendo GameBoy
+- Console Family started in 1989, the first handheld gaming console. Started as Black and White gaming, Game Boy Color introduced more color to the games.
+- Console's best game titles: Tetris, Pokémon Red and Blue, Pokémon Yellow, Pokémon Gold and Silver, Super Mario Land, Kirby's Dream Land, Donkey Kong, The Legend of Zelda: Link's Awakening
+- Console is NOT on my list. Game Boy and Game Boy Color games compatible on GBA.
+
+Nintendo Virtual Boy
+- Console released in 1995, displayed games in red and black 3D. A commercial failure.
+- Console is NOT on my list. Not needed.
+
+Nintendo Game Boy Advance (GBA)
+- Console Family started in 2001, console-quality 2D gaming on the go and backwards compatible with Game Boy and Game Boy Color games.
+- Console's best game titles: Pokémon Ruby and Sapphire, Pokémon Emerald, Mario Kart: Super Circuit, Golden Sun, Fire Emblem, Kirby and the Amazing Mirror
+- Console(s) is/are on my list.
+  - GBA (AGB-001, Indigo)
+  - GBA SP [Back-lit] (AGS-001, Black)
+
+Nintendo DS
+- Console Family started in 2004, one of the best-selling gaming systems made. Dual screens
+- Console's best game titles: New Super Mario Bros., Pokémon Diamond and Pearl, Pokémon Platinum, Pokémon Black and White, Mario Kart DS, Brain Age, Nintendogs, The Legend of Zelda: Phantom Hourglass
+- Console(s) is/are on my list.
+  - Nintendo DS Lite (USG-001, Polar White)
+  - Nintendo DSi XL (UTL-001, Midnight Blue)
+
+Nintendo 3DS
+- Console Family started in 2011, introduced 3D gaming without special glasses.
+- Console's best game titles: Pokémon X and Y, Mario Kart 7, Pokémon Sun and Moon, Super Smash Bros. for Nintendo 3DS, Animal CrossingL New Leaf, New Super Mario Bros. 2, 
+- Console(s) is/are on my list.
+  - Nintendo 3DS XL (SPR-001, Red and Black)
+  - Nintendo 2DS (FTR-001, Blue and Black)
+  - New Nintendo 3DS XL (RED-001, Metallic Black)
+  - New Nintendo 2DS XL (JAN-001, White and Orange)
+
+
+Nintendo (Hybrid):
+
+Nintendo Switch
+- Console Family began in 2017, best known for being the first hybrid console. Can be played both as home or handheld console.
+- Console's best game titles: Super Mario Odyssey, The Legend of Zelda: Tears of the Kingdom, Super Smash Bros Ultimate, Pokémon Sword and Shield, Splatoon 2 and 3, Fire Emblem: Three Houses
+- Console(s) is/are on my list.
+  - Nintendo Switch OLED (HEG-001, White and Black)
+
+Nintendo Switch 2
+- Console Family began in 2025, the newest and modern console. Fully compatible with Switch, newer features.
+- Console's best game titles: Mario Kart World, Pokémon Legends Z-A, Donkey Kong Bananza, Pokémon Pokopia
+
+
+PlayStation (Home):
+
+PlayStation
+- Console released in 1995 after ending partnership with Nintendo. Best-known for CD-based gaming, 3D Graphics, memory cards, and story games.
+- Console(s) best game titles: Final Fantasy VII, Gran Truism, Metal Gear Solid, Silent Hill, Resident Evel 1 and 2
+- Console is NOT on my list. PS1 games compatible on PS2. 
+
+PlayStation 2
+- Console released in 2000, best selling game console of all time. Large game library, DVD compatibility, backwards compatible with PS1 games.
+- Console(s) best game titles: Grand Theft Auto: San Andreas, God of War 1 and 2, Gran Truism 3 and 4, Metal Gear Solid 2 and 3
+- Console is on my list.
+
+PlayStation 3
+- Console released in 2006, best known for introducing HD gaming, Blu-ray technology, and online multiplayer.
+- Console(s) best game titles: The Last of Us, Uncharted, Gran Truism 5, God of War III
+- Console is on my list.
+  - PlayStation 3 (100GB)
+
+PlayStation 4
+- Console released in 2013, best-known for 
+- Console(s) best game titles: God of War, Bloodborne, Marvel's Spider-Man, Horizon Zero Dawn, The Last of Us Part II
+- Console is NOT on my list. PS4 games compatible with PS5.
+
+PlayStation 5
+- Console released in 20
+- Console(s) best game titles: Spider-Man Miles Morales, Spider-Man 2, Stellar Blade, God of War Ragnarök, HorizonL Forbidden West
+- Console is on my list.
+  - PlayStation 5 Pro
+
+
+PlayStation (Handheld)
+
+PlayStation Portable (PSP)
+- Console Family started in 2004, the first handheld console Sony developed. UMD disc media, widescreen graphics.
+- Console(s) best game titles: Final Fantasy VII, God of War: Chains of Olympus, Grand Theft Auto: Liberty City Stories.
+- Console is on my list.
+
+PS VITA
+- Console Family started in 2011, introduced dual analog sticks, OLED screens, touchscreen controls.
+- Console(s) best game titles: Uncharted: Golden Abyss, Persona 4 Golden
+- Console is on my list.
+
+
+Xbox 
+
+Microsoft Xbox
+- Console released in 2001, the very first Xbox Console Microsoft developed. Best known for powerful hardware and online multiplayer.
+- Consoles best game titles: Halo 2, Fable, Star Wars: Knights of the Old Republic, Forza Motorsport
+- Console is NOT on my list. Many Xbox games compatible on 360, One, and Series.
+
+Xbox 360
+- Console Family started in 2005, best known for online and HD gaming and downloadable content.
+- Consoles best game titles: Halo 3, Fable II, Left 4 Dead, Red Dead Redemption, Call of Duty: Modern Warfare
+- Console is NOT on my list. Many Xbox 360 games compatible on Xbox One and Series.
+
+Xbox One
+- Console Family started in 2013, best known for multimedia integration and backwards compatibility improvements.
+- Consoles best game titles: Forza Horizon 4, Halo 5: Guardians, Sea of Thieves, Ori and the Blind Forest
+- Console is NOT on my list. Many Xbox One games compatible on Xbox Series.
+
+
+Xbox Series X | S
+- Console Family started in 2020, best known for fast SSD storage, high rate frames, the strongest backwards compatibility program, and cross-generation support.
+- Consoles best game titles: Forza Horizon 5, Halo Infinite, Sea of Thieves, Gears 5, Indiana Jones and the Great Circle
+- Console is on my list.
+  - Xbox Series X (2TB) Galaxy Black

@@ -29,3 +29,9 @@ Source File: my_script.cu
 
 Text File: input.txt
 - The text file used as an input for all three versions. It contains the content so the program can read, count, and search through.
+
+## Key Features
+- The CPU and GPU performances, when code is run, proves that the GPU is much faster than CPY.
+- I made two versions of GPU, global vs shared memory, proving that the shared memory is significantly faster than my first GPU results.
+- The word count, character count, and frequency test all prove to be efficient as all have the same correct answers.
+- The timing output proves that CPU takes the longest time for a larger file, the GPU taking about 10% of that time, and the new GPU taking even less. Therefore, this proves my idea of GPU's being more effieint in finding the word count and term frequency in a file.

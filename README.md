@@ -12,6 +12,9 @@ Step 2: Run
 Execute the compiled code and provide a target character or word(s) in parenthesis for the frequency test
 * ./my_script "____"
 
+If you'd like to print to another text file to have a printed file of the output, run this command:
+* ./my_script "____" >> "Output.txt"
+
 ## Dependencies
 C++ Library: Used for reading the file, handling string variables, and printing the output (results of the code).
 

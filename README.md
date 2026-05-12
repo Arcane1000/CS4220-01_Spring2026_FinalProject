@@ -30,6 +30,9 @@ Source File: my_script.cu
 Text File: input.txt
 - The text file used as an input for all three versions. It contains the content so the program can read, count, and search through.
 
+Output File: Output.txt
+- The text file is optional, but when it is included in the run command, it will print the outputs in that text file.
+
 ## Key Features
 - The CPU and GPU performances, when code is run, proves that the GPU is much faster than CPY.
 - I made two versions of GPU, global vs shared memory, proving that the shared memory is significantly faster than my first GPU results.

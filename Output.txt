@@ -1,0 +1,92 @@
+CPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Nintendo": 31
+CPU Processing Time: 210 ms
+
+
+GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Nintendo": 31
+GPU Processing Time: 3.69562 ms
+
+
+NEW GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Nintendo": 31
+GPU Processing Time: 0.019456 ms
+
+CPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "PlayStation": 10
+CPU Processing Time: 208 ms
+
+
+GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "PlayStation": 10
+GPU Processing Time: 3.00749 ms
+
+
+NEW GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "PlayStation": 10
+GPU Processing Time: 0.02048 ms
+
+CPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Xbox": 12
+CPU Processing Time: 206 ms
+
+
+GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Xbox": 12
+GPU Processing Time: 3.32595 ms
+
+
+NEW GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "Xbox": 12
+GPU Processing Time: 0.019456 ms
+
+CPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "console": 74
+CPU Processing Time: 214 ms
+
+
+GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "console": 74
+GPU Processing Time: 3.23072 ms
+
+
+NEW GPU RESULTS
+-------------------------------
+Total Word Count: 1622
+Total Character Count: 7531
+Frequency of "console": 74
+GPU Processing Time: 0.019456 ms
+
